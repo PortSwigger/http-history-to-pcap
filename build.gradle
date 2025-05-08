@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtimeOnly 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'net.portswigger.burp.extensions:montoya-api:2025.4'
+    implementation 'org.pcap4j:pcap4j-core:1.8.2'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'net.java.dev.jna:jna:5.13.0'
+    implementation 'net.java.dev.jna:jna-platform:5.13.0'
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
