@@ -7,7 +7,7 @@ SerialVersion: 1
 MinPlatformVersion: 21
 ProOnly: False
 Author: turekt
-ShortDescription: This extension allows users to export selected traffic directly from the Burp HTTP History tab into a PCAP file.
+ShortDescription: Export selected traffic directly from HTTP History to a PCAP file.
 EntryPoint: burphistory2pcap-1.0.0.jar
 BuildCommand: mvn clean install
 SupportedProducts: Pro, Community
