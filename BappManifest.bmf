@@ -3,7 +3,7 @@ ExtensionType: 1
 Name: HTTP History to PCAP
 RepoName: http-history-to-pcap
 ScreenVersion: 1.0.0
-SerialVersion: 1
+SerialVersion: 2
 MinPlatformVersion: 21
 ProOnly: False
 Author: turekt
