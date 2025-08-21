@@ -1,0 +1,13 @@
+Uuid: 1de644f1b90e4f54bc385bd1ffc1b147
+ExtensionType: 1
+Name: HTTP History to PCAP
+RepoName: http-history-to-pcap
+ScreenVersion: 1.0.0
+SerialVersion: 1
+MinPlatformVersion: 21
+ProOnly: False
+Author: turekt
+ShortDescription: This extension allows users to export selected traffic directly from the Burp HTTP History tab into a PCAP file.
+EntryPoint: burphistory2pcap-1.0.0.jar
+BuildCommand: mvn clean install
+SupportedProducts: Pro, Community

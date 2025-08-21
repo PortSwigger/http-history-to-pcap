@@ -1,0 +1,23 @@
+<p>BurpHistory2Pcap is a Burp extension that allows you to export selected traffic directly from the Burp HTTP History tab into a PCAP file. This extension is an implementation of the burp2pcap script, facilitating easy analysis of selected traffic in packet analysis tools such as Wireshark.</p>
+
+<h2>Features</h2>
+<ul>
+<li><p>Exports selected HTTP traffic from the Burp HTTP History tab into a PCAP (Packet Capture) file format</p></li>
+<li><p>Allows users to specify write options such as the save location of the file, server port, and server IP addresses</p></li>
+<li><p>Generated PCAP file can be directly used in packet analysis tools for further examination of the HTTP traffic</p></li>
+</ul>
+
+<h2>Usage</h2>
+<p>Select the rows of traffic data you want to export in the HTTP History tab under Proxy, then right click to open the context menu. Following this path will get you there: </p> 
+
+<pre><code class=Code>Extensions -&gt; BurpHistory2Pcap -&gt; Export selected HTTP message(s) to PCAP</code></pre>
+
+<p>Next, specify your preferred write options:</p>
+
+<ul>
+<li><p><code class=InlineCode>Filepath</code>: Define the local path where the PCAP file will be saved.</p></li>
+<li><p><code class=InlineCode>Use port 80</code>: If checked, this sets the server port in the file to HTTP 80, improving Wireshark packet dissection. Uncheck this option if you want to retain the actual server port in your PCAP file.</p></li>
+<li><p><code class=InlineCode>Use real server IPs</code>: If checked, the PCAP file will contain the actual server IP addresses. If unchecked, the server IP will default to a predefined local IP.</p></li>
+</ul>
+
+<p>The extension will generate a PCAP file containing the selected HTTP messages in the specified file path with the chosen options.</p>
